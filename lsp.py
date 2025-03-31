@@ -38,6 +38,12 @@ def executeLSPCode(LSPCode):
                 return liblinea.displayLSP(displayParam)
             else:
                 return f"Syntax Error: Variable '{displayParam}' not found"
+    elif LSPCode.startswith("web "):
+        webParam = LSPCode.replace("web", "").strip()
+        if webParam.startswith('"') or webParam.startswith("'"):
+            return liblinea.web(webParam[1:-1])
+        else:
+            return f"Syntax Error: Invalid web parameter '{webParam}'"
     elif LSPCode.startswith("evaluate "):
         expression = LSPCode.replace("evaluate", "").strip()
         result = liblinea.evaluate(expression, _LSP_VARIABLES)
