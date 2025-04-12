@@ -2,6 +2,8 @@
 
 Welcome to the Linea Server Pages (LSP) repository! LSP is a powerful dynamic web page generation system built on top of the Linea Programming Language.
 
+Latest : 2.1.0
+
 ## Overview
 
 LSP aims to provide a robust and flexible environment for creating dynamic web applications. It leverages the simplicity and efficiency of Linea, making web development more accessible and productive.
